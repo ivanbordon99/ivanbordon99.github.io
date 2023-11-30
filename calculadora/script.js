@@ -2,10 +2,7 @@ const CALCULAR = document.getElementById('calcular');
 const ERROR = document.getElementById('error');
 const FLU = document.getElementById('flu');
 const MAN = document.getElementById('man');
-window.addEventListener('load', main);
 
-
-function main(){
 function calcFlujo(peso){
     let resto = peso;
     let flujo = 0;
@@ -40,5 +37,5 @@ CALCULAR.addEventListener('click', () => {
         MAN.style.display = 'none';
     }
 })
-    } 
+    
 
