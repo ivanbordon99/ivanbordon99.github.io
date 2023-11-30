@@ -1,6 +1,6 @@
 let intentos = 6;
-let palabra = "APPLE";
 let diccionario = ["ABETO", "ACTOR", "AGUAS", "AGUDO", "ALADO", "ALBAS", "ALTAR", "ANTON", "ATIZO", "AVALA", "AVION", "AZUL"];
+let palabra = diccionario[Math.floor(Math.random() * diccionario.length)];
 const button = document.getElementById("guess-button");
 button.addEventListener("click", intentar);
 const input = document.getElementById("guess-input");
