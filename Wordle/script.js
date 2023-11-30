@@ -1,5 +1,6 @@
 let intentos = 6;
 let palabra = "APPLE";
+let diccionario = ["ABETO", "ACTOR", "AGUAS", "AGUDO", "ALADO", "ALBAS", "ALTAR", "ANTON", "ATIZO", "AVALA", "AVION", "AZUL"];
 const button = document.getElementById("guess-button");
 button.addEventListener("click", intentar);
 const input = document.getElementById("guess-input");
@@ -12,6 +13,25 @@ ROW.className = 'row';
 
 
 function intentar(){
+	const GRID = document.getElementById("grid");
+    const ROW = document.createElement('div');
+    ROW.className = 'row';
+    for (let i in palabra){
+        const SPAN = document.createElement('span');
+        SPAN.className = 'letter';
+        if (INTENTO[i]===palabra[i]){ //VERDE
+            SPAN.innerHTML = INTENTO[i];
+            SPAN.style.backgroundColor = 'green';
+        } else if( palabra.includes(INTENTO[i]) ) { //AMARILLO
+            SPAN.innerHTML = INTENTO[i];
+            SPAN.style.backgroundColor = 'yellow';
+        } else {      //GRIS
+            SPAN.innerHTML = INTENTO[i];
+            SPAN.style.backgroundColor = 'grey';
+        }
+        ROW.appendChild(SPAN)
+    }
+    GRID.appendChild(ROW)
     const INTENTO = leerIntento();
     if (INTENTO === palabra ) {
         console.log("GANASTE!")
