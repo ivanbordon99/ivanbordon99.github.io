@@ -9,5 +9,6 @@ function calcular(entrada){
 }
 
 CALCULAR.addEventListener('click', () => {
-    console.log('Se hizo click!')
+    const DATO = document.getElementById('peso').value;
+    console.log('dato ingresado: ', DATO);
 })
