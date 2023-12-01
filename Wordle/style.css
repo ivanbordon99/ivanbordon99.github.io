@@ -1,10 +1,16 @@
 body {
    font-family: Arial, sans-serif;
+   background-color: rgb(190, 202, 23) 122, 65);
  }
     
  h1 {
+
    text-align: center;
-   margin-top: 50px;
+   margin-top: 60px;
+   color: #ff2600;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   line-height: 2;
+   
  }
     
  #guess-input {
@@ -17,11 +23,13 @@ body {
  }
     
  #guess-button {
+
    display: block;
    margin: 0 auto;
    padding: 10px 20px;
    font-size: 18px;
-   background-color: #0CBABA;
+   background-color: #116838;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
    color: #fff;
    border: none;
    border-radius: 3px;
@@ -32,16 +40,28 @@ body {
  }
     
  .letter {
-     border: 1px solid black;
-     padding: 3px;
-     margin: 3px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+     border: 2px solid black;
+     font-weight: bold;
+     padding: 10px;
+     margin: 10px;
      min-width: 20px;
      text-align: center;
-     display: inline-block
+     display: inline-block;
+     border-radius: 5px;
  }
     
  .row{
      margin-bottom: 10px;
+     border-radius: 10px;
+     text-align: center;
+ }
+ .grid{
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-align: center;
+
  }
     
  .input-area{

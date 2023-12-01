@@ -15,25 +15,28 @@ ROW.className = 'row';
 function intentar(){
 	const GRID = document.getElementById("grid");
     const ROW = document.createElement('div');
+    const INTENTO = leerIntento();
     ROW.className = 'row';
     for (let i in palabra){
         const SPAN = document.createElement('span');
         SPAN.className = 'letter';
         if (INTENTO[i]===palabra[i]){ //VERDE
             SPAN.innerHTML = INTENTO[i];
-            SPAN.style.backgroundColor = 'green';
+            SPAN.style.backgroundColor = '#1abc9c';
+            
         } else if( palabra.includes(INTENTO[i]) ) { //AMARILLO
             SPAN.innerHTML = INTENTO[i];
-            SPAN.style.backgroundColor = 'yellow';
+            SPAN.style.backgroundColor = '#f1c40f';
         } else {      //GRIS
             SPAN.innerHTML = INTENTO[i];
-            SPAN.style.backgroundColor = 'grey';
+            SPAN.style.backgroundColor = '#34495e';
         }
         ROW.appendChild(SPAN)
     }
-    GRID.appendChild(ROW)
-    const INTENTO = leerIntento();
+    GRID.appendChild(ROW);
     if (INTENTO === palabra ) {
+        terminar("<h1 style='color: GREEN '>FELICIDADES, HAS GANADO</h1>");
+        return
         console.log("GANASTE!")
         return
     }
@@ -50,15 +53,8 @@ function intentar(){
     if (intentos==0){
         console.log("PERDISTE!")
     }
-
-    if (INTENTO === palabra ) {
-
-        terminar("<h1 style='color: GREEN '>GANASTE!😀</h1>");
-        return
-    }
-
     if (intentos==0){
-        terminar("<h1 style='color: RED'>PERDISTE!😖</h1>");
+        terminar("<h1 style='color: RED'>LO SIENTO, HAS PERDIDO</h1>");
     }
 
 
