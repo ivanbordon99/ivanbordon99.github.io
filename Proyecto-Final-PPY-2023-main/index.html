@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calculadora de Conversión Alimenticia Y Rendimiento a la Canal</title>
+</head>
+
+<body>
+    <h1 id="titulo">Conversion Alimenticia y Rendimiento a la Canal</h1>
+    <div id="formulario">
+        <label for="frutas">Selecciona el tipo de cálculo</label>
+        <br>
+        <select id="opciones" name="opciones" onchange="mostrarEntradas()">
+            <option value="1">Conversión alimenticia(KG)</option>
+            <option value="2">Rendimiento a la canal(KG)</option>
+        </select>
+        <div id="inputs">
+            <div id="conversional">
+                <div id="alimento">
+                    <label for="alimento">Total de alimento consumido(kg):</label><br>
+                    <input type="number" id="alimentoinput" placeholder="Ingrese la cantidad de alimento">
+                </div>
+                <div id="pesoInicial">
+                    <label for="pesoInicial">Peso Inicial (kg):</label>
+                    <br>
+                    <input type="number" id="pesoInicialinput" placeholder="Ingrese el peso inicial del animal">
+                </div>
+                <div id="pesoFinal">
+                    <label for="pesoFinal">Peso final(kg):</label>
+                    <br>
+                    <input type="number" id="pesoFinalinput" placeholder="Ingrese el peso final del animal">
+                </div>
+            </div>
+            <div id="pesocanal">
+
+                <div id="canal">
+                    <div id="peso">
+                        <label for="pesoVivo">Peso vivo(en terminación) (kg):</label>
+                        <br>
+                        <input type="number" id="pesoVivoinput" placeholder="Ingrese el peso vivo en terminacion">
+                    </div>
+                    <label for="pesoEnCanal">Peso en canal (kg):</label>
+                    <br>
+                    <input type="number" id="pesoEnCanalinput" placeholder="Ingrese el peso en canal total">
+                </div>
+            </div>
+            <button id="btn" onclick="mostrarResultado()">Mostrar resultado </button>
+        </div>
+
+        <div id="resultado">
+          <br><br><br>
+        </div>
+
+    </div>
+    <footer>
+        <div id="leyendas">
+            <p><strong>Conversión Alimenticia (CA):</strong> Representa la proporción de alimento que debe consumir el
+                animal para producir un kg de carne. Se calcula dividiendo la cantidad total de alimento consumido entre
+                el peso ganado en un tiempo determinado.</p>
+            <p><strong>Rendimiento a la Canal:</strong> Representa el porcentaje de carne obtenido del peso vivo. Se
+                calcula automáticamente.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
