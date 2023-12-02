@@ -7,6 +7,12 @@ body {
 h1 {
     font-family:'Times New Roman', Times, serif;
 }
+h5 {
+
+padding: 3px;
+    font-weight: bold;
+    
+}
 
 #formulario {
     font-size: 18px;
