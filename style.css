@@ -1,0 +1,118 @@
+section {
+
+
+border: 1px gray solid;
+padding: 10px;
+margin: 10px 180px 10px 180px;
+
+
+}
+.redes {
+
+
+    text-decoration: none;
+
+}
+.aheader {
+
+
+   color: white;
+
+
+}
+h1 {
+
+    font-family: 'helvetica';
+
+
+
+
+
+}
+h2{
+
+    font-family: 'helvetica';
+
+
+
+
+
+}
+footer {
+
+    text-align: center;
+
+}
+
+header {
+
+    background-color: rgb(40, 39, 39);
+    border-width: 10px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 10px 180px 10px 180px;
+    color: white;
+
+}
+a {
+
+
+color: rgb(149, 0, 255);
+margin: 10px;
+
+}
+#contacto {
+
+    text-align: center;
+
+}
+
+nav {
+
+    padding-top: 10px;
+    border-width: 10px;
+    border: 10px;
+
+}
+input {
+
+
+    background-color: white;
+    border-radius: 5px;
+    color: rgb(40, 39, 39);
+    padding: 10px 50px 10px 50px;
+    border: 1px solid rgb(40, 39, 39);
+    margin: 2px;
+
+
+}
+textarea {
+
+
+    background-color: white;
+    color: rgb(40, 39, 39);
+    padding: 50px;
+
+
+}
+
+button {
+
+
+    background-color: rgb(40, 39, 39);
+    color: white;
+    border-style: hidden;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'helvetica';
+
+
+}
+button:active{
+
+    background-color: rgb(95, 91, 91);
+    color: white;
+
+}
+
