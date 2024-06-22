@@ -7,42 +7,43 @@
 </head>
 
 <body>
-  <header>
-    <nav>
+  <header class="menu-fijo">
+    <nav  >
       <ul>
-        <a class="aheader" href="#acerca-de-mi">Acerca de mí</a>
-        <a class="aheader" href="#habilidades">Habilidades</a>
-        <a class="aheader" href="#experiencia">Experiencia</a>
-        <a class="aheader" href="#proyectos">Proyectos</a>
-        <a class="aheader" href="#contacto">Contacto</a>
+        <a id="menu-item" id="acerca-de-mi" href="#about">Acerca de mí</a>
+        <a id="menu-item" href="#habilidades">Habilidades</a>
+        <a id="menu-item" href="#experiencia">Experiencia</a>
+        <a id="menu-item" href="#proyectos">Proyectos</a>
+        <a id="menu-item" href="#contacto">Contacto</a>
       </ul>
+      <h1>Iván Bordón - Programador</h1>
+    
     </nav>
-    <h1>Iván Bordón</h1>
-    <h2>Programador</h2>
+    
   </header>
   <main>
     <section id="about">
       <h2>Acerca de mí</h2>
       <p>
-        Desarrollador web junior. Con muchas ganas de aprender cada día más sobre las nuevas tecnologías 
+        Desarrollador web junior. Con muchas ganas de aprender cada día más sobre las nuevas tecnologías
         web, enfocado en el desarrollo full stack.
       </p>
     </section>
     <section id="habilidades">
       <h2>Habilidades</h2>
       <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>C++</li>
-        <li>SQ</li>
+        <li id="html">HTML</li>
+        <li id="css">CSS</li>
+        <li id="js">JavaScript</li>
+        <li id="cpp">C++</li>
+        <li id="sq">SQL</li>
       </ul>
     </section>
     <section id="experiencia">
       <h2>Experiencia</h2>
       <ul>
         <li>
-          <b>C.R.E.E</b> (2022-presente)
+          <b>C.R.E.E</b> (2014-2016)
           <ul>
             <li>TÉCNICO EN INFORMÁTICA</li>
             <li>
@@ -51,11 +52,11 @@
           </ul>
         </li>
         <li>
-          <strong>Universidad Nacional de Itapúa</strong> (2020-2022)
+          <strong>Universidad Nacional de Itapúa</strong> (2019-Presente)
           <ul>
             <li>Ingeniería en Electrónica</li>
             <li>
-              
+
             </li>
           </ul>
         </li>
@@ -76,9 +77,9 @@
     </section>
     <section id="contacto">
       <h2>Contacto</h2>
-      
 
-      <a  class="redes" href="https://www.facebook.com/ivancho.bordon.3/">
+
+      <a class="redes" href="https://www.facebook.com/ivancho.bordon.3/">
         <img src="facebook.png" width="50px" height="50px">
       </a>
       <a href="https://www.instagram.com/bord_vinn/">
@@ -87,11 +88,13 @@
 
       </a>
       <h3>También puedes mandarme un email desde este formulario</h3>
+      <form>
+        <input type="text" placeholder="Nombre"><br>
+        <input type="email" placeholder="Email"><br>
+        <textarea placeholder="Ingrese aquí su comentario"></textarea><br>
+        <button>Enviar</button>
+      </form>
 
-      <input type="text" placeholder="Nombre"><br>
-      <input type="email" placeholder="Email"><br>
-      <textarea placeholder="Ingrese aquí su comentario"></textarea><br>
-      <button>Enviar</button>
 
 
 
